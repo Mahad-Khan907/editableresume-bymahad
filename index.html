@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="names">Editable Resume Builder Made By Mahad Khan</h1>
+    <form id="resumeForm">
+        <fieldset id="personalField">
+            <legend>Personal Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="profile">Profile Picture:</label>
+            <input type="file" id="profile" name="profilePicture" accept="image/*" required>
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills"></textarea>
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="education">Education</label>
+            <textarea id="education" name="education"></textarea>
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience"></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="getresume" contenteditable="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
